@@ -28,15 +28,15 @@ const client = new Client({
 const app = express();
 const port = 3000;
 app.get('/', (req, res) => {
-  res.send('YaY Your Bot Status Changed✨');
+  res.redirect('https://discord.com/api/oauth2/authorize?client_id=1128634289576218656&permissions=70368744177655&scope=bot')
 });
 app.listen(port, () => {
-  console.log(`🔗 Listening to RTX: http://localhost:${port}`);
+  console.log(`🔗 Listening to RTX: https://discord.com/api/oauth2/authorize?client_id=1128634289576218656&permissions=70368744177655&scope=bot:${port}`);
   console.log(`🔗 Powered By RTX`);
 });
 
 
-const statusMessages = ["Watching Netflix","Listening to Spotify","Playing GTA VI"];
+const statusMessages = ["Playing AFGP|Security👾","Watching and protect sever 👁‍🗨","Guard the border🛡"];
 
 
 let currentIndex = 0;
